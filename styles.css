@@ -1,0 +1,5 @@
+/* Custom font */
+@font-face {
+    font-family: Norse;
+    src: url(Norse-Bold.otf);    
+}
