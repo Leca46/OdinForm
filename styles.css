@@ -21,16 +21,89 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 20%;
-    width: 41vh;
     opacity: 0.65;
 }
 
-.logo img {
+.logo-bg img {
     height: 80%;
 }
 
 .logo-bg h1 {
     color: white;
+    font-family: Norse;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-gap: 1rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+}
+
+.header h2 {
+    font-family: Norse;
+}
+
+/* Form styles */
+.form-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-gap: 1.5rem;
+    padding: 3rem;
+}
+
+.form-group1, .form-group2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 0.8rem;
+}
+
+input {
+    width: 60%;
+    padding: 0.3rem;
+    margin: 5px;
+    border-radius: 4px;
+    height: 1.7rem;
+    border: 2.2px solid #f0fafc;
+}
+
+.form-group2 :nth-child(6):focus:invalid {
+    outline-color: red;
+}
+
+.form-group1 :nth-child(6):focus:invalid {
+    outline-color: red;
+}
+
+/* Footer */
+.right footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+input[type='submit'] {
+    background-color: darkblue;
+    width: 20%;
+    height: 3rem;
+    margin: 3rem;
+    color: #fff;
+    font-size: 1rem;
+}
+span {
+    padding-left: 0.2rem;
+    padding-top: 0.5rem;
+    margin-left: 0.1rem;
+    font-size: 1rem;
+}
+span strong {
+    color: darkblue;
 }
