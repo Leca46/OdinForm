@@ -3,3 +3,34 @@
     font-family: Norse;
     src: url(Norse-Bold.otf);    
 }
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.bg-image {
+    background: url(tom-barrett-dkv2CXSoVfs-unsplash.jpg) no-repeat center center/cover;
+    width: 99%;
+    height: 100vh;
+}
+
+.logo-bg  {
+    height: 20%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    width: 41vh;
+    opacity: 0.65;
+}
+
+.logo img {
+    height: 80%;
+}
+
+.logo-bg h1 {
+    color: white;
+}
